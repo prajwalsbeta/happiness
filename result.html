@@ -12,70 +12,112 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="jquery-circle-progress/dist/circle-progress.js"></script>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Google Happiness</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Logout</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Google Happiness</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="start.html">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="">About-us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
       <div class="container">
         <div class="jumbotron">
-          <h1 class="display-3">Here are your results!</h1>
+          <h1 class="display-3">Result</h1>
           <p class="lead">Seem you are depressed!</p>
           <hr class="my-2">
-
           <div class="circle" id="circle-a">
-            <strong></strong>
+            <div id="strong">10%</div>
           </div>
-          <p>Please provid some contacts of your close ones</p>
+          <p>Take it out! <br> Share your feelings with your near and dear ones.</p>
           <p class="lead">
             <form>
               <div class="form-group">
-                <label for="Name1">Name:</label>
-                <input type="text" class="form-control" id="Name1" placeholder="Name">
-                <label for="Contact1">Contact No:</label>
-                <input type="number" maxlength="150px" class="form-control" id="Contact1" placeholder="phone number">
+                <label >Person 1</label>
+                <div class="row">
+                <label for="Name1" class="col-sm-2 col-form-label">Name:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Name1" placeholder="Name">                   
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="Contact1" class="col-sm-2 col-form-label">Contact No:</label>
+                    <div class="col-sm-10">
+                      <input type="number" maxlength="150px" class="form-control" id="Contact1" placeholder="phone number">
+                    </div>
+                  </div>
               </div>
               <div class="form-group">
-                <label for="Name2">Name:</label>
-                <input type="text" class="form-control" id="Name2" placeholder="Name">
-                <label for="Contact2">Contact No:</label>
-                <input type="number" maxlength="150px" class="form-control" id="Contact2" placeholder="phone number">
+                <label >Person 2</label>
+                <div class="row">
+                <label for="Name2" class="col-sm-2 col-form-label">Name:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Name2" placeholder="Name">                   
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="Contact2" class="col-sm-2 col-form-label">Contact No:</label>
+                    <div class="col-sm-10">
+                      <input type="number" maxlength="150px" class="form-control" id="Contact2" placeholder="phone number">
+                    </div>
+                  </div>
               </div>
               <div class="form-group">
-                <label for="Name3">Name:</label>
-                <input type="text" class="form-control" id="Name3" placeholder="Name">
-                <label for="Contact3">Contact No:</label>
-                <input type="number" maxlength="150px" class="form-control" id="Contact3" placeholder="phone number">
+                <label >Person 1</label>
+                <div class="row">
+                <label for="Name3" class="col-sm-2 col-form-label">Name:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Name3" placeholder="Name">                   
+                  </div>
+                </div>
+                <div class="row">
+                  <label for="Contact3" class="col-sm-2 col-form-label">Contact No:</label>
+                    <div class="col-sm-10">
+                      <input type="number" maxlength="150px" class="form-control" id="Contact3" placeholder="phone number">
+                    </div>
+                  </div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            
+              <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary"style="font-size: 1.3rem; border-radius: 10rem; padding-right: 10px;padding-left: 10px;"  data-toggle="modal" data-target="#ThankModal">Submit</button>
+              </div>
+            </form> 
           </p>
         </div>
         
+      </div>
+      
+      <div class="modal fade" id="ThankModal" tabindex="-1" role="dialog" aria-labelledby="thankModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="thankModalLabel">Thankyou</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Your near and dear ones will contact you soon
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

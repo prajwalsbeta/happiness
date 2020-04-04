@@ -1,11 +1,13 @@
 let questions = [
-	// key corresponds to radio button name attribute
-	//value is the answer or the option no
 	'q1',
 	'q2',
 	'q3',
 	'q4',
 	'q5',
+	' q6',
+	' q7',
+	' q8',
+	' q9',
 ]
 $(document).ready(function () {
 	localStorage.setItem('score', 0)
@@ -19,12 +21,11 @@ function handleFormSubmit(e) {
 	localStorage.setItem('score', 0)
 	score = calculateScore()
 	localStorage.setItem('score', score)
-	if (score <= 5) {
+	if (score <= 10) {
         window.location = "result2.html"
     }
     else{
         window.location = "result.html"
-
     }
 }
 

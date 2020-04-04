@@ -2,7 +2,18 @@
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
 }
-
+@font-face {
+  font-family: Impact;
+  src: url(impactreg.woff);
+  font-weight: bold;
+}
+.verticle-center {
+  text-align: center;
+  min-height: 100%;  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
 .card-signin {
   border: 0;
