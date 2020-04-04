@@ -19,9 +19,13 @@ function handleFormSubmit(e) {
 	localStorage.setItem('score', 0)
 	score = calculateScore()
 	localStorage.setItem('score', score)
-	//remove it later (debugging)
-	alert('score: ' + localStorage.score)
-	// TODO :- redirect based on score value
+	if (score <= 5) {
+        window.location = "result2.html"
+    }
+    else{
+        window.location = "result.html"
+
+    }
 }
 
 function calculateScore() {

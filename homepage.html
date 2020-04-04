@@ -1,318 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<meta name="description" content="" />
-		<meta name="author" content="" />
 
-		<title>N_ame</title>
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="main.js"></script>
-	</head>
-	<body>
-		<div id="onLoadModal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Here are our Observations!</h4>
-					</div>
-					<div class="modal-body">
-						<p>
-							Your score is 50%. We request you to please take the following
-							test for further results.
-						</p>
-						<button class="btn btn-success" data-dismiss="modal">
-							Take Test
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
+<head>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">N_ame</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"
-							>Home <span class="sr-only">(current)</span></a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Profile</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="login.html">Logout</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container">
-			<form>
-				<div class="form-group">
-					<label for="Question1">Question1</label>
+  <title>Google Happiness</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./main.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#onLoadModal").modal('show');
+    });
+</script>
+<style>body {
+  background: linear-gradient(to right, #33AEFF, #0062E6);
+}</style>
+</head>
+<body>
 
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q1s1"
-							name="q1"
-							class="custom-control-input"
-							value="1"
-						/>
-						<label class="custom-control-label" for="q1s1">option1</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q1s2"
-							name="q1"
-							class="custom-control-input"
-							value="2"
-						/>
-						<label class="custom-control-label" for="q1s2">option2</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q1s3"
-							name="q1"
-							class="custom-control-input"
-							value="3"
-						/>
-						<label class="custom-control-label" for="q1s3">option3</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q1s4"
-							name="q1"
-							class="custom-control-input"
-							value="4"
-						/>
-						<label class="custom-control-label" for="q1s4">option4</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="Question1">Question2</label>
+  <div id="onLoadModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Here are our Observations!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Your score is 50%. We request you to please take the following test for further results.</p>
+                <button class="btn btn-success" data-dismiss="modal">Take Test</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q2s1"
-							name="q2"
-							class="custom-control-input"
-							value="1"
-						/>
-						<label class="custom-control-label" for="q2s1">option1</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q2s2"
-							name="q2"
-							class="custom-control-input"
-							value="2"
-						/>
-						<label class="custom-control-label" for="q2s2">option2</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q2s3"
-							name="q2"
-							class="custom-control-input"
-							value="3"
-						/>
-						<label class="custom-control-label" for="q2s3">option3</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q2s4"
-							name="q2"
-							class="custom-control-input"
-							value="4"
-						/>
-						<label class="custom-control-label" for="q2s4">option4</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="Question1">Question3</label>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Google Happiness</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="Question1">Little interest or pleasure in doing things</label>
+               
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1s1" name="q1"  class="custom-control-input"  value="4">
+                <label class="custom-control-label" for="q1s1">
+                  Not at all
+                  </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1s2" name="q1"  class="custom-control-input"  value="3">
+                <label class="custom-control-label" for="q1s2">Several days
+                  </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1s3" name="q1"  class="custom-control-input"  value="2">
+                <label class="custom-control-label" for="q1s3">
+                  More than half of the days
+                  </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q1s4" name="q1"  class="custom-control-input"  value="1">
+                <label class="custom-control-label" for="q1s4">
+                  Nearly every day</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Question1">Feeling down, depressed, or hopeless</label>
+               
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q2s1" name="q2"  class="custom-control-input" value="1">
+                <label class="custom-control-label" for="q2s1">Not at all</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q2s2" name="q2"  class="custom-control-input" value="2">
+                <label class="custom-control-label" for="q2s2">Several days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q2s3" name="q2"  class="custom-control-input" value="3">
+                <label class="custom-control-label" for="q2s3">More than half the days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q2s4" name="q2"  class="custom-control-input" value="4">
+                <label class="custom-control-label" for="q2s4">Nearly every day</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Question1">Trouble falling or staying asleep, or sleeping too much</label>
+               
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q3s1" name="q3"  class="custom-control-input" value="1">
+                <label class="custom-control-label" for="q3s1">Not at all</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q3s2" name="q3"  class="custom-control-input" value="2">
+                <label class="custom-control-label" for="q3s2">Several days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q3s3" name="q3"  class="custom-control-input" value="3">
+                <label class="custom-control-label" for="q3s3">More than half the days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q3s4" name="q3"  class="custom-control-input" value="4">
+                <label class="custom-control-label" for="q3s4">Nearly every day</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Question1">Feeling tired or having little energy</label>
+               
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q4s1" name="q4"  class="custom-control-input" value="1">
+                <label class="custom-control-label" for="q4s1">Not at all</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q4s2" name="q4"  class="custom-control-input" value="2">
+                <label class="custom-control-label" for="q4s2">Several days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q4s3" name="q4"  class="custom-control-input" value="3">
+                <label class="custom-control-label" for="q4s3">More than half the days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q4s4" name="q4"  class="custom-control-input" value="4">
+                <label class="custom-control-label" for="q4s4">Nearly every day</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Question1">Poor appetite or overeating</label>
+               
+              <div class="custom-control custom-radio">
+                <input type="radio" id="q5s1" name="q5"  class="custom-control-input" value="1">
+                <label class="custom-control-label" for="q5s1">Not at all</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q5s2" name="q5"  class="custom-control-input" value="2">
+                <label class="custom-control-label" for="q5s2">Several days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q5s3" name="q5"  class="custom-control-input" value="3">
+                <label class="custom-control-label" for="q5s3">More than half the days</label>
+              </div><div class="custom-control custom-radio">
+                <input type="radio" id="q5s4" name="q5"  class="custom-control-input" value="4">
+                <label class="custom-control-label" for="q5s4">Nearly every day</label>
+              </div>
+            </div>
 
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q3s1"
-							name="q3"
-							class="custom-control-input"
-							value="1"
-						/>
-						<label class="custom-control-label" for="q3s1">option1</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q3s2"
-							name="q3"
-							class="custom-control-input"
-							value="2"
-						/>
-						<label class="custom-control-label" for="q3s2">option2</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q3s3"
-							name="q3"
-							class="custom-control-input"
-							value="3"
-						/>
-						<label class="custom-control-label" for="q3s3">option3</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q3s4"
-							name="q3"
-							class="custom-control-input"
-							value="4"
-						/>
-						<label class="custom-control-label" for="q3s4">option4</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="Question1">Question4</label>
+            <button type="submit" class="btn btn-success">Sumit</button>
+          </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q4s1"
-							name="q4"
-							class="custom-control-input"
-							value="1"
-						/>
-						<label class="custom-control-label" for="q4s1">option1</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q4s2"
-							name="q4"
-							class="custom-control-input"
-							value="2"
-						/>
-						<label class="custom-control-label" for="q4s2">option2</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q4s3"
-							name="q4"
-							class="custom-control-input"
-							value="3"
-						/>
-						<label class="custom-control-label" for="q4s3">option3</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q4s4"
-							name="q4"
-							class="custom-control-input"
-							value="4"
-						/>
-						<label class="custom-control-label" for="q4s4">option4</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="Question1">Question5</label>
-
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q5s1"
-							name="q5"
-							class="custom-control-input"
-							value="1"
-						/>
-						<label class="custom-control-label" for="q5s1">option1</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q5s2"
-							name="q5"
-							class="custom-control-input"
-							value="2"
-						/>
-						<label class="custom-control-label" for="q5s2">option2</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q5s3"
-							name="q5"
-							class="custom-control-input"
-							value="3"
-						/>
-						<label class="custom-control-label" for="q5s3">option3</label>
-					</div>
-					<div class="custom-control custom-radio">
-						<input
-							type="radio"
-							id="q5s4"
-							name="q5"
-							class="custom-control-input"
-							value="4"
-						/>
-						<label class="custom-control-label" for="q5s4">option4</label>
-					</div>
-				</div>
-
-				<button type="submit" class="btn btn-success">Sumit</button>
-			</form>
-		</div>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-			crossorigin="anonymous"
-		></script>
-	</body>
+</body>
 </html>
