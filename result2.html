@@ -12,7 +12,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="jquery-circle-progress/dist/circle-progress.js"></script>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -43,32 +45,14 @@
       <div class="container">
         <div class="jumbotron">
           <h1 class="display-3">Here are your results!</h1>
-          <p class="lead">Seem you are depressed!</p>
+          <p class="lead">Seem you are Happy!</p>
           <hr class="my-2">
-          <p>Please provid some contacts of your close ones</p>
+          <div class="circle" id="circle-a">
+            <strong></strong>
+          </div>
+          <p>Stay possitive!</p>
           <p class="lead">
-            <form>
-              <div class="form-group">
-                <label for="Name1">Name:</label>
-                <input type="text" class="form-control" id="Name1" placeholder="Name">
-                <label for="Contact1">Contact No:</label>
-                <input type="number" maxlength="150px" class="form-control" id="Contact1" placeholder="phone number">
-              </div>
-              <div class="form-group">
-                <label for="Name2">Name:</label>
-                <input type="text" class="form-control" id="Name2" placeholder="Name">
-                <label for="Contact2">Contact No:</label>
-                <input type="number" maxlength="150px" class="form-control" id="Contact2" placeholder="phone number">
-              </div>
-              <div class="form-group">
-                <label for="Name3">Name:</label>
-                <input type="text" class="form-control" id="Name3" placeholder="Name">
-                <label for="Contact3">Contact No:</label>
-                <input type="number" maxlength="150px" class="form-control" id="Contact3" placeholder="phone number">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            
+
           </p>
         </div>
         
@@ -76,6 +60,7 @@
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.1.3/circle-progress.min.js'></script><script  src="./progress.js"></script>
 </body>
 </html>
