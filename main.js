@@ -1,11 +1,11 @@
-let questionsAnswers = [
+let questions = [
 	// key corresponds to radio button name attribute
 	//value is the answer or the option no
-	['q1', '1'],
-	['q2', '1'],
-	['q3', '2'],
-	['q4', '3'],
-	['q5', '2'],
+	'q1',
+	'q2',
+	'q3',
+	'q4',
+	'q5',
 ]
 $(document).ready(function () {
 	localStorage.setItem('score', 0)
@@ -26,11 +26,11 @@ function handleFormSubmit(e) {
 
 function calculateScore() {
 	let score = 0
-	for (let [question, answer] of questionsAnswers) {
+	for (let question of questions) {
 		document.getElementsByName(question).forEach((elem) => {
-			if (elem.checked && elem.value === answer) {
+			if (elem.checked && elem.value) {
 				//if answer is correct
-				score += 1
+				score += +elem.value
 			}
 		})
 	}
