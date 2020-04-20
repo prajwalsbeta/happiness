@@ -15,3 +15,13 @@ var progressBarOptions = {
 $('.circle').circleProgress(progressBarOptions).on('circle-animation-progress', function(event, progress, stepValue) {
 	document.getElementById("strong").innerHTML = Math.floor(score1*100)+"% depression";	
 });
+
+$(document).ready(function () {
+	document
+		.querySelector("[type='submit']")
+		.addEventListener('click', handleContactSubmit)
+})
+function handleContactSubmit(e) {
+	e.preventDefault()
+	window.location = "thankyou.html"
+}
